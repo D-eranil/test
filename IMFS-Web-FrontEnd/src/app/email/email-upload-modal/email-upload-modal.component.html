@@ -1,0 +1,20 @@
+<p-dialog [(visible)]="displayDialog" [responsive]="true" header="Attach Files" [style]="{width: '35vw'}"
+    [baseZIndex]="10000">
+
+    <div class="p-field p-grid">
+
+        <div class="p-col-12">
+
+            <p-fileUpload #fileUpload mode="advanced" [showUploadButton]="false" [showCancelButton]="false"
+                [customUpload]="false" (onSelect)="onSelect($event)" (onRemove)="onRemove($event)" [multiple]="true"
+                accept="" chooseLabel="Browse" [auto]="false" class="p-col-8">
+            </p-fileUpload>
+
+        </div>
+    </div>
+
+    <p-footer>
+        <button pButton type="button" label="Close" (click)="displayDialog=false" class="p-button-outlined"></button>
+    </p-footer>
+
+</p-dialog>

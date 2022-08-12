@@ -1,0 +1,111 @@
+[
+  {
+    "name": "Home",
+    "route": "/home",
+    "iconClass": "monetization_on",
+    "hasChildren": false,
+    "isExternal": false,
+    "children": []
+  },
+  {
+    "name": "Quotes",
+    "route": "",
+    "iconClass": "monetization_on",
+    "hasChildren": true,
+    "itemState": "collapsed",
+    "isExternal": false,
+    "children": [
+      {
+        "name": "Create Quote",
+        "route": "/quote/quote-details",
+        "isExternal": false,
+        "includeResources": "Quote.Details"
+      },
+      {
+        "name": "Search Quote",
+        "route": "/quote/quote-search",
+        "isExternal": false,
+        "includeResources": "Quote.Search"
+      }
+    ]
+  },
+  {
+    "name": "Applications",
+    "route": "",
+    "iconClass": "monetization_on",
+    "hasChildren": true,
+    "itemState": "collapsed",
+    "children": [
+      {
+        "name": "Search Applications",
+        "route": "/application/application-search",
+        "isExternal": false,
+        "includeResources": ""
+      },
+    ]
+  },
+  {
+    "name": "Settings",
+    "route": "",
+    "iconClass": "monetization_on",
+    "hasChildren": true,
+    "itemState": "collapsed",
+    "children": [
+        {
+            "name": "Funder",
+            "route": "/funder",
+            "isExternal": false,
+            "includeResources": ""
+        },
+        {
+            "name": "User Management",
+            "route": "/user-list",
+            "isExternal": false,
+            "includeResources": ""
+        },
+        {
+            "name": "Vendor",
+            "route": "/vendor",
+            "isExternal": false,
+            "includeResources": ""
+        },
+        {
+            "name": "Finance Type",
+            "route": "/finance-type",
+            "isExternal": false,
+            "includeResources": ""
+        },
+        {
+            "name": "Rates",
+            "route": "",
+            "isExternal": false,
+            "includeResources": "",
+            "hasChildren": true,
+            "children": [
+                {
+                    "name": "SKU / Category",
+                    "route": "/quote-rate",
+                    "isExternal": false,
+                    "includeResources": "",
+                    "hasChildren": false,
+                    "children": []
+                },
+                {
+                    "name": "Quote Total Value",
+                    "route": "/quote-break-total-rate",
+                    "isExternal": false,
+                    "includeResources": "",
+                    "hasChildren": false,
+                    "children": []
+                }
+            ]
+        },
+        {
+            "name": "Product Type",
+            "route": "/finance-product-type",
+            "isExternal": false,
+            "includeResources": ""
+        }
+    ]
+  }
+]
